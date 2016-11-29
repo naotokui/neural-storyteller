@@ -5,7 +5,7 @@ Configuration for the generate module
 #-----------------------------------------------------------------------------#
 # Flags for running on CPU
 #-----------------------------------------------------------------------------#
-FLAG_CPU_MODE = True
+FLAG_CPU_MODE = False
 
 #-----------------------------------------------------------------------------#
 # Paths to models and biases
@@ -13,26 +13,26 @@ FLAG_CPU_MODE = True
 paths = dict()
 
 # Skip-thoughts
-paths['skmodels'] = '/u/rkiros/public_html/models/'
-paths['sktables'] = '/u/rkiros/public_html/models/'
+paths['skmodels'] = './skip-thoughts-models/'
+paths['sktables'] = './skip-thoughts-models/'
 
 # Decoder
-paths['decmodel'] = '/ais/gobi3/u/rkiros/storyteller/romance.npz'
-paths['dictionary'] = '/ais/gobi3/u/rkiros/storyteller/romance_dictionary.pkl'
+paths['decmodel'] = 'neural_storyteller/romance.npz'
+paths['dictionary'] = 'neural_storyteller/romance_dictionary.pkl'
 
 # Image-sentence embedding
-paths['vsemodel'] = '/ais/gobi3/u/rkiros/storyteller/coco_embedding.npz'
+paths['vsemodel'] = 'neural_storyteller/coco_embedding.npz'
 
 # VGG-19 convnet
-paths['vgg'] = '/ais/gobi3/u/rkiros/vgg/vgg19.pkl'
-paths['pycaffe'] = '/u/yukun/Projects/caffe-run/python'
-paths['vgg_proto_caffe'] = '/ais/guppy9/movie2text/neural-storyteller/models/VGG_ILSVRC_19_layers_deploy.prototxt'
-paths['vgg_model_caffe'] = '/ais/guppy9/movie2text/neural-storyteller/models/VGG_ILSVRC_19_layers.caffemodel'
-
+paths['vgg'] = 'models/vgg19.pkl'
+paths['pycaffe'] = '/usr/local/DL-Box/digits-2.0/caffe/python'
+paths['vgg_proto_caffe'] = './models/vgg19/VGG_19_deploy.prototxt'
+paths['vgg_model_caffe'] = './models/vgg19/VGG_ILSVRC_19_layers.caffemodel'
 
 # COCO training captions
-paths['captions'] = '/ais/gobi3/u/rkiros/storyteller/coco_train_caps.txt'
+paths['captions'] = 'neural_storyteller/coco_train_caps.txt'
 
 # Biases
-paths['negbias'] = '/ais/gobi3/u/rkiros/storyteller/caption_style.npy'
-paths['posbias'] = '/ais/gobi3/u/rkiros/storyteller/romance_style.npy'
+paths['negbias'] = 'neural_storyteller/caption_style.npy'
+paths['posbias'] = 'neural_storyteller/romance_style.npy'
+#paths['posbias'] = 'neural_storyteller/swift_style.npy'
