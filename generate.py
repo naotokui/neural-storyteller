@@ -74,7 +74,7 @@ def story(z, image_loc, k=100, bw=50, lyric=False):
         print passage
 
 
-def load_all():
+def load_all(config):
     """
     Load everything we need for generating
     """
@@ -221,5 +221,3 @@ def build_convnet(path_to_vgg):
     lasagne.layers.set_all_param_values(output_layer, model['param values'])
 
     return net
-
-

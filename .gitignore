@@ -58,3 +58,13 @@ target/
 
 # Ignore changes to configuration file
 config.py
+
+#ipynotebook temp files
+.ipynb_checkpoints/
+
+# models - to be downloaded and placed
+models/
+neural_storyteller/
+skip-thoughts-models/
+
+
